@@ -3,30 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Digitale Arbeitsmittel für den Mathematikunterricht der Grundschule und die Lehrerbildung, entwickelt von Dr. Simeon Schwob (GIMB, Universität Münster).">
 <title>Lernanwendungen von Simeon Schwob</title>
 <style>
-:root{--bg:#F4F6F8;--card:#fff;--ink:#1F2A33;--mut:#5C6B77;--line:#D5DDE3;--link:#00578A}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12181D;--card:#1B242B;--ink:#E7EDF1;--mut:#9AA9B4;--line:#33414C;--link:#5DB0E6;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#12181D;--card:#1B242B;--ink:#E7EDF1;--mut:#9AA9B4;--line:#33414C;--link:#5DB0E6;color-scheme:dark}
+:root{--bg:#F4F6F8;--card:#fff;--ink:#1F2A33;--mut:#5C6B77;--line:#D5DDE3;--link:#00578A;--tag:#E1ECF3}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12181D;--card:#1B242B;--ink:#E7EDF1;--mut:#9AA9B4;--line:#33414C;--link:#5DB0E6;--tag:#1C3445;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12181D;--card:#1B242B;--ink:#E7EDF1;--mut:#9AA9B4;--line:#33414C;--link:#5DB0E6;--tag:#1C3445;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:680px;margin:0 auto;padding:32px 16px 48px;display:grid;gap:12px}
-h1{font-size:1.6rem;margin:0}
+main{max-width:760px;margin:0 auto;padding:40px 16px 48px;display:grid;gap:28px}
+h1{font-size:1.75rem;line-height:1.2;margin:0 0 8px;text-wrap:balance}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:0 0 10px}
 p{margin:0}
 a{color:var(--link)}
-.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;text-decoration:none;color:var(--ink)}
-.card b{color:var(--link)}
-.mut{color:var(--mut);font-size:.9rem}
+.lead{max-width:62ch;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{display:grid;gap:6px;align-content:start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+.card:hover,.card:focus-visible{border-color:var(--link)}
+.card:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.card b{color:var(--link);font-size:1.05rem}
+.card span{font-size:.92rem}
+.tag{justify-self:start;font-size:.75rem;background:var(--tag);color:var(--ink);border-radius:99px;padding:2px 9px}
+.person{display:grid;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.person p{max-width:62ch}
+footer{border-top:1px solid var(--line);padding-top:14px;font-size:.85rem;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 16px}
 </style>
 </head>
 <body>
 <main>
+<header>
 <h1>Lernanwendungen für den Mathematikunterricht</h1>
-<p class="mut">Von Dr. Simeon Schwob, entwickelt für die Lehre am GIMB, Universität Münster</p>
-<a class="card" href="tangram-werkstatt/"><b>Tangram-Werkstatt</b><br>Digitales Tangram mit sechsstufiger Schwierigkeitsleiter, Klasse 1–4</a>
-  <a class="card" href="spiegel-werkstatt/"><b>Spiegel-Werkstatt</b><br>Achsensymmetrie mit Kästchen, Geobrett, Spiegel und Forscherbuch, Klasse 1–4</a>
-<a class="card" href="symmetrie-werkstatt/"><b>Symmetrie-Werkstatt</b><br>Kongruenzabbildungen und Deckabbildungen für die Vorlesung „Lernen und Anwenden von Geometrie“</a>
-<p class="mut"><a href="impressum.html">Impressum und Datenschutz</a></p>
+<p class="lead">Digitale Arbeitsmittel für die Grundschule und die Lehrerbildung. Sie laufen im Browser auf Tablet und Rechner, ohne Anmeldung und ohne Datenerhebung.</p>
+</header>
+
+<section>
+<h2>Für die Grundschule</h2>
+<div class="grid">
+<a class="card" href="tangram-werkstatt/"><b>Tangram-Werkstatt</b><span>Auslegen, nachlegen, erfinden: digitales Tangram mit sechsstufiger Schwierigkeitsleiter</span><span class="tag">Geometrie · Klasse 1–4</span></a>
+<a class="card" href="spiegel-werkstatt/"><b>Spiegel-Werkstatt</b><span>Achsensymmetrie mit Kästchen, Geobrett, Spiegel und Forscherbuch</span><span class="tag">Geometrie · Klasse 1–4</span></a>
+<a class="card" href="blitzblick-werkstatt/"><b>Blitzblick-Werkstatt</b><span>Zahlen schnell sehen: Arbeitsmittel zur (quasi-)simultanen Anzahlerfassung</span><span class="tag">Arithmetik · Klasse 1–2</span></a>
+</div>
+</section>
+
+<section>
+<h2>Für die Lehrerbildung</h2>
+<div class="grid">
+<a class="card" href="symmetrie-werkstatt/"><b>Symmetrie-Werkstatt</b><span>Kongruenzabbildungen und Deckabbildungen für die Vorlesung „Lernen und Anwenden von Geometrie“</span><span class="tag">Geometrie · Studium</span></a>
+</div>
+</section>
+
+<section class="person">
+<h2>Zur Person</h2>
+<p><b>Dr. Simeon Schwob</b> arbeitet am GIMB – Institut für grundlegende und inklusive mathematische Bildung der Universität Münster. Er hat die Anwendungen für seine Lehre entwickelt; sie sind ein privates Angebot.</p>
+<p><a href="https://www.uni-muenster.de/GIMB/team/schwob.shtml">Seite am Institut</a></p>
+</section>
+
+<footer>
+<span>Code: MIT · Materialien: CC BY 4.0</span>
+<a href="impressum.html">Impressum und Datenschutz</a>
+</footer>
 </main>
 </body>
 </html>
