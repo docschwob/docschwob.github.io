@@ -18,12 +18,12 @@ p{margin:0}
 a{color:var(--link)}
 .lead{max-width:62ch;color:var(--mut)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
-.card{display:grid;gap:6px;align-content:start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
 .card:hover,.card:focus-visible{border-color:var(--link)}
 .card:focus-visible{outline:3px solid var(--link);outline-offset:2px}
 .card b{color:var(--link);font-size:1.05rem}
 .card span{font-size:.92rem}
-.tag{justify-self:start;font-size:.75rem;background:var(--tag);color:var(--ink);border-radius:99px;padding:2px 9px}
+.tag{align-self:flex-start;margin-top:auto;font-size:.75rem;background:var(--tag);color:var(--ink);border-radius:99px;padding:2px 9px}
 .person{display:grid;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
 .person p{max-width:62ch}
 footer{border-top:1px solid var(--line);padding-top:14px;font-size:.85rem;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 16px}
